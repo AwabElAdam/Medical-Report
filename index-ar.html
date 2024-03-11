@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <title></title>
+    <!-- <style type="text/css">
+      .text-overlay {
+        position: absolute;
+        top: 300px;
+        left: 18%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 30px;
+        z-index: 2;
+        font-family: "Garamond";
+      }
+
+      .rounded-pill {
+        border-radius: 50px;
+      }
+
+      .table-responsive {
+        margin-top: 60px;
+      }
+
+      .card-header {
+        background-color: #e19a6c;
+      }
+
+      .table {
+        font-family: "Garamond";
+        font-size: 12px;
+        min-width: max-content;
+        width: 60%;
+        border-collapse: collapse;
+        border: 1px solid grey;
+      }
+
+      .card-text {
+        color: black;
+      }
+
+      .card-header h1 {
+        margin-right: 20px;
+      }
+
+      .table {
+        color: black;
+        border: none;
+        font-weight: lighter;
+      }
+
+      .table-wrapper {
+        width: 50%;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px 20px 0px 0px;
+        bottom: 0;
+      }
+
+      .page {
+        position: relative;
+        display: flex;
+        background-image: url("./assets/img/cover.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 80vh;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+      }
+
+      .title {
+        font-size: medium;
+        font-weight: 900;
+      }
+
+      h3 {
+        font-weight: lighter;
+      }
+
+      h2 {
+        color: darkslategrey;
+      }
+    </style> -->
+  </head>
+  <body
+    class="flex flex-col items-center justify-center gap-2 bg-slate-200 font-elmessiri"
+  >
+    <!-- page 01 -->
+    <div
+      dir="rtl"
+      id="cover-page"
+      class="bg-[url('../img/cover.png')] bg-cover h-[842px] w-[595px] flex flex-col items-center justify-between"
+    >
+      <div id="report-header" class="relative flex justify-center w-full gap-4">
+        <div
+          class="bg-white h-[100px] flex justify-center items-end p-2 rounded-b-lg"
+        >
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="flex flex-col items-center">
+        <h2
+          id="medical-report-title"
+          class="my-5 text-5xl text-white underline underline-offset-4 decoration-orange-400"
+        >
+          التقرير الطبي
+        </h2>
+
+        <div
+          id="bot-image"
+          class="bg-[url(../img/cover-2.png)] bg-cover w-[450px] h-[390px] flex flex-col justify-end items-center rounded-t-lg"
+        >
+          <div
+            id="sales-wrapper"
+            class="flex flex-col items-center justify-center p-6 text-white rounded-t-lg bg-[#1C2E38] w-fit"
+          >
+            <h3 id="small-title" class="text-xs">اسم المستشار الطبي</h3>
+            <h3 id="title" class="text-2xl font-bold">Taim Assaib</h3>
+            <h3 class="mt-4 text-xs">التاريخ : 28/02/2024</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 02 -->
+    <div
+      dir="rtl"
+      id="page-02"
+      class="bg-[url('../img/page-2.png')] bg-cover h-[842px] w-[595px] flex flex-col items-center justify-between"
+    >
+      <div id="report-header" class="relative flex justify-center w-full gap-4">
+        <div class="bg-white h-[100px] flex items-end p-2 rounded-b-lg">
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="text-center text-white w-[450px]">
+        <h2 class="text-2xl font-bold">مشفى سفير دنت</h2>
+        <p class="" dir="rtl">
+          يعتبر مستشفى سفير دنت رائد لطب الأسنان في أوروبا ومنطقة الشرق الأوسط،
+          ويقدم خدمات طب الأسنان بخبرة تزيد عن 20 عامًا.
+          <br />
+          <br />
+          كما يقدم حزمة كاملة من خدمات طب الأسنان والإقامة الفندقية و النقل
+          لزاواره الدوليين، للتأكد من أن كل زائر يشعر بالراحة طوال فترة الرحلة و
+          أثناء إجراءات العمل الطبي الخاصة به
+        </p>
+      </div>
+      <div class="grid w-auto grid-cols-2 gap-[5px]">
+        <img
+          class="rounded-[5px] object-cover w-[240px] h-[150px]"
+          src="/assets/img/clinic_image_01.png"
+          alt=""
+        />
+        <img
+          class="rounded-[5px] object-cover w-[240px] h-[150px]"
+          src="/assets/img/clinic_image_02.png"
+          alt=""
+        />
+        <img
+          class="rounded-[5px] object-cover w-[240px] h-[150px]"
+          src="/assets/img/clinic_image_03.png"
+          alt=""
+        />
+        <img
+          class="rounded-[5px] object-cover w-[240px] h-[150px]"
+          src="/assets/img/clinic_image_04.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="grid grid-cols-5 w-[500px] gap-2 items-center justify-center text-center"
+      >
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-xs text-white"
+        >
+          <img src="./assets/img/followup.png" alt="" />
+          <h3>المتابعة الطبية لمدة سنة</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-xs text-white"
+        >
+          <img src="./assets/img/transport.png" alt="" />
+          <h3>خدمة المواصلات VIP</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center bg-white rounded-full"
+        >
+          <img src="./assets/img/TROPHY-02.png" alt="" />
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-xs text-white"
+        >
+          <img src="./assets/img/hotel.png" alt="" />
+          <h3>الإقامة الفندقية في افضل الفنادق</h3>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-xs text-white"
+        >
+          <img src="./assets/img/translate.png" alt="" />
+          <h3>المترجم الطبي</h3>
+        </div>
+      </div>
+
+      <div
+        dir="ltr"
+        class="grid grid-cols-3 text-xs text-white w-[490px] my-8 h-[40px]"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- page 03 -->
+    <div
+      id="page-03"
+      class="bg-white h-[842px] w-[595px] flex flex-col items-center justify-between text-SaphireBlue"
+    >
+      <div
+        id="report-header"
+        class="relative flex justify-between items-center w-[490px] gap-4"
+      >
+        <div
+          class="bg-white h-[100px] flex items-end p-2 rounded-b-lg shadow-xl"
+        >
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-2 text-right justify-evenly">
+          <h2 class="text-sm font-semibold text-slate-400">التقرير الطبي</h2>
+          <h2 class="text-xl font-bold underline decoration-SaphireOrange">
+            التشخيص الطبي
+          </h2>
+        </div>
+      </div>
+      <div
+        id="client-wrapper"
+        class="flex flex-col justify-center w-[490px] text-right items-left"
+      >
+        <h3 id="small-title" class="text-sm">اسم المريض</h3>
+        <h3 id="title" class="text-3xl font-bold">Mohammed</h3>
+        <h3 class="mt-2 text-xs">MG-28022024 :IDرقم ال</h3>
+      </div>
+
+      <img
+        class="rounded-[5px] object-cover w-[490px]"
+        src="/assets/img/clinic_image_01.png"
+        alt=""
+      />
+      <div class="text-center w-[450px]" dir="rtl">
+        <p class="">
+          بناءً على الصور والأشعة البانورامية التي أرسلها المريض، نرى ما يلي:
+
+          <br />
+          <br />
+
+          التقييم المبدئي للفك السفلي لإمكانية وضع الغرسات (يوجد تراجع للعظام)
+          سيتم في الموقع حيث نلتقط صورة CBCT ثلاثية الأبعاد وعلى أساسها نقوم
+          بتقييم موضع الغرسات/ الموضع الأولي للفك 4 يزرع قصيرة.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-3 text-xs text-white bg-SaphireBlue w-[490px] p-4 h-[40px] rounded-t-lg"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- page 04 -->
+    <div
+      id="page-04"
+      class="bg-white h-[842px] w-[595px] flex flex-col items-center justify-between text-slate-600"
+    >
+      <div
+        id="report-header"
+        class="relative flex justify-between items-center w-[490px] gap-4"
+      >
+        <div
+          class="bg-white h-[100px] flex items-end p-2 rounded-b-lg shadow-xl"
+        >
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-2 text-right justify-evenly">
+          <h2 class="text-sm font-semibold text-slate-400">التقرير الطبي</h2>
+          <h2 class="text-xl font-bold underline decoration-SaphireOrange">
+            تفاصيل الزيارات الطبية
+          </h2>
+        </div>
+      </div>
+      <!-- visitz -->
+      <div class="w-[490px] h-full my-10">
+        <!-- visit01 -->
+        <div dir="rtl" class="w-full py-5 border-t">
+          <div class="flex items-baseline gap-4">
+            <h2 class="text-xl font-bold">الزيارة الأولى</h2>
+            <h2>مدة الزيارة</h2>
+            <h2>مدة الإقامة</h2>
+          </div>
+          <div class="mt-4">
+            <h3 class="font-semibold">و يتم فيها الإجرائات الطبية التالية</h3>
+            <ol class="pr-6 list-decimal">
+              <li>خلع بعض الأسنان.</li>
+              <li>من الممكن تطبيق تكبير قاع الجيب الفكي العلوي (خارجي).</li>
+              <li>من الممكن تطبيق ترقيع العظام.</li>
+              <li>وضع 4 زرعات في الفك العلوي.</li>
+              <li>وضع 4 زرعات في الفك السفلي.</li>
+            </ol>
+          </div>
+        </div>
+        <!-- visit01 -->
+        <div dir="rtl" class="w-full py-5 border-t">
+          <div class="flex items-baseline gap-4">
+            <h2 class="text-xl font-bold">الزيارة الثانية</h2>
+            <h2>مدة الزيارة</h2>
+            <h2>مدة الإقامة</h2>
+          </div>
+          <div class="mt-4">
+            <h3 class="font-semibold">و يتم فيها الإجرائات الطبية التالية</h3>
+            <ol class="pr-6 list-decimal">
+              <li>تركيب 12 تاج زركونيا ألماني على الفك العلوي.</li>
+              <li>تركيب 12-13 تاج زركونيا ألماني على الفك السفلي.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-3 text-xs text-white bg-SaphireBlue w-[490px] p-4 h-[40px] rounded-t-lg"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- page 05 -->
+    <div
+      id="page-05"
+      class="bg-white h-[842px] w-[595px] flex flex-col items-center justify-between text-slate-600"
+    >
+      <div
+        id="report-header"
+        class="relative flex justify-between items-center w-[490px] gap-4"
+      >
+        <div
+          class="bg-white h-[100px] flex items-end p-2 rounded-b-lg shadow-xl"
+        >
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-2 text-right justify-evenly">
+          <h2 class="text-sm font-semibold text-slate-400">التقرير الطبي</h2>
+          <h2 class="text-xl font-bold underline decoration-SaphireOrange">
+            التكلفة
+          </h2>
+        </div>
+      </div>
+      <!-- visitz -->
+      <div class="w-[490px] h-full">
+        <!-- visit01 -->
+        <div dir="rtl" class="flex flex-col justify-between w-full h-full">
+          <div class="mt-4">
+            <div class="flex items-baseline gap-4">
+              <h2 class="text-xl font-bold">تكلفة الزيارة الأولى</h2>
+            </div>
+            <table class="w-full text-sm rounded-lg table-auto">
+              <thead>
+                <tr class="text-xs border-t-2 border-sky-400">
+                  <th class="w-3/4 p-4">الخدمة</th>
+                  <th class="p-2 py-1">العدد</th>
+                  <th class="p-2 py-1">سعر الخدمة</th>
+                  <th class="p-2 py-1">الخصم</th>
+                  <th class="w-full p-2 py-1">السعر بعد الخصم</th>
+                  <th class="p-2 py-1">المجموع</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-y">
+                  <td class="px-auto">إستشارة طبية</td>
+                  <td class="py-1 text-center px-auto">1</td>
+                  <td class="py-1 text-center px-auto">€100</td>
+                  <td class="py-1 text-center px-auto">100%</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">صور بانوراما</td>
+                  <td class="py-1 text-center px-auto">1</td>
+                  <td class="py-1 text-center px-auto">€50</td>
+                  <td class="py-1 text-center px-auto">100%</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">علاج اللثة</td>
+                  <td class="py-1 text-center px-auto">1</td>
+                  <td class="py-1 text-center px-auto">€500</td>
+                  <td class="py-1 text-center px-auto">100%</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">تكبير الجيب الفكي</td>
+                  <td class="py-1 text-center px-auto">5</td>
+                  <td class="py-1 text-center px-auto">€300</td>
+                  <td class="py-1 text-center px-auto">50%</td>
+                  <td class="py-1 text-center px-auto">€150</td>
+                  <td class="py-1 text-center px-auto">€650</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">زرعات اوميقا</td>
+                  <td class="py-1 text-center px-auto">1</td>
+                  <td class="py-1 text-center px-auto">€750</td>
+                  <td class="py-1 text-center px-auto">50%</td>
+                  <td class="py-1 text-center px-auto">€350</td>
+                  <td class="py-1 text-center px-auto">€350</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">تيجان الزيركونيوم للفك السفلي</td>
+                  <td class="py-1 text-center px-auto">10</td>
+                  <td class="py-1 text-center px-auto">€260</td>
+                  <td class="py-1 text-center px-auto">50%</td>
+                  <td class="py-1 text-center px-auto">€130</td>
+                  <td class="py-1 text-center px-auto">€1300</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">تيجان الزيركونيوم للفك العلوي</td>
+                  <td class="py-1 text-center px-auto">12</td>
+                  <td class="py-1 text-center px-auto">€260</td>
+                  <td class="py-1 text-center px-auto">50%</td>
+                  <td class="py-1 text-center px-auto">€130</td>
+                  <td class="py-1 text-center px-auto">€1560</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">الحجز الفندقي</td>
+                  <td class="py-1 text-center px-auto">8</td>
+                  <td class="py-1 text-center px-auto">€44</td>
+                  <td class="py-1 text-center px-auto">0%</td>
+                  <td class="py-1 text-center px-auto">€44</td>
+                  <td class="py-1 text-center px-auto">€44</td>
+                </tr>
+                <tr class="border-y">
+                  <td class="px-auto">المواصلات الداخلية</td>
+                  <td class="py-1 text-center px-auto">1</td>
+                  <td class="py-1 text-center px-auto">€250</td>
+                  <td class="py-1 text-center px-auto">100%</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                  <td class="py-1 text-center px-auto">€0</td>
+                </tr>
+                <tr>
+                  <td class="px-auto"></td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td class="py-1 text-center line-through px-auto">€8,020</td>
+                </tr>
+                <tr>
+                  <td class="px-auto">
+                    <img
+                      class="w-full h-full scale-125"
+                      src="./assets/img/stamp-scan.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td class="py-1 text-center px-auto"></td>
+                  <td
+                    class="py-1 text-xl font-bold text-center underline decoration-sky-300 px-auto"
+                  >
+                    المجموع
+                  </td>
+                  <td
+                    class="py-1 text-xl font-bold text-center underline decoration-sky-300 px-auto"
+                  >
+                    €3,710
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- payment info -->
+          <div
+            class="flex items-center justify-center w-full mt-auto border rounded-xl text-sky-500 bg-sky-100 border-sky-300"
+          >
+            <div
+              class="flex flex-col h-full gap-3 p-6 text-center text-white rounded-lg bg-sky-800"
+            >
+              <p class="text-xs">السعر بعد التخفيض</p>
+              <h2 class="text-4xl font-semibold">€3,710</h2>
+            </div>
+            <div class="w-full p-4">
+              <table
+                class="text-xs [&_th]:text-right [&_td]:text-left [&_th]:py-1 w-full"
+              >
+                <tbody>
+                  <tr>
+                    <th>اسم الحساب</th>
+                    <td>MG SARI SAGLIK TURIZMI</td>
+                  </tr>
+                  <tr>
+                    <th>رقم الحساب (يورو)</th>
+                    <td>TR20 0020 5000 0957 1943 8001 02</td>
+                  </tr>
+                  <tr>
+                    <th>كود SWIFT/BIC</th>
+                    <td>KTEFTRIS</td>
+                  </tr>
+                  <tr>
+                    <th>اسم البنك</th>
+                    <td>Kuveyt Türk Katilim Bankasi A.S.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="w-full p-2 my-auto text-xs border rounded-lg text-sky-500 bg-sky-100 border-sky-300"
+          >
+            <span class="font-bold">*ملاحظة:</span> هذا العرض صالح لمدة محددة من
+            تاريخ التقرير الطبي
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-3 text-xs text-white bg-SaphireBlue w-[490px] p-4 h-[40px] rounded-t-lg"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- page 06 -->
+    <div
+      id="page-06"
+      class="bg-white h-[842px] w-[595px] flex flex-col items-center justify-between text-slate-600"
+    >
+      <div
+        id="report-header"
+        class="relative flex justify-between items-center w-[490px] gap-4"
+      >
+        <div
+          class="bg-white h-[100px] flex items-end p-2 rounded-b-lg shadow-xl"
+        >
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-2 text-right justify-evenly">
+          <h2 class="text-sm font-semibold text-slate-400">التقرير الطبي</h2>
+          <h2 class="text-xl font-bold underline decoration-SaphireOrange">
+            المواد الطبية
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="w-[490px] text-center h-full flex flex-col items-center justify-around"
+      >
+        <!-- products -->
+        <div class="flex gap-8">
+          <!-- zirconium -->
+          <div>
+            <h2 class="text-2xl font-bold">تركيبات الزيركونيوم</h2>
+            <img class="p-8" src="./assets/img/straumann-zirconia.png" alt="" />
+            <p>Straumann Zirconium</p>
+          </div>
+          <!-- dental implants -->
+          <div>
+            <h2 class="text-2xl font-bold">زرعات الأسنان</h2>
+            <img class="p-8" src="./assets/img/straumann-implant.png" alt="" />
+            <p>Straumann Implant</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-around gap-2">
+          <div class="flex flex-col items-center justify-center">
+            <h2 class="text-2xl font-bold underline decoration-SaphireOrange">
+              شهادات الجودة
+            </h2>
+            <p class="w-2/3">
+              نقدم خدمات طب الأسنان على أعلى معايير الجودة العالمية
+            </p>
+          </div>
+          <div
+            class="flex items-center justify-center p-2 rounded bg-SaphireBlue"
+          >
+            <img
+              class=""
+              width="250"
+              src="./assets/img/SDC certificate.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex items-center justify-between gap-8 [&_img]:w-10">
+            <img
+              src="./assets/img/logos/Logo_of_Ministry_of_Health_(Turkey) 1.png"
+              alt=""
+            />
+            <img src="./assets/img/logos/Group 25.png" alt="" />
+            <img src="./assets/img/logos/ISO_logo_PNG4 1.png" alt="" />
+            <img src="./assets/img/logos/Group 70.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-3 text-xs text-white bg-SaphireBlue w-[490px] p-4 h-[40px] rounded-t-lg"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- page 07 -->
+    <div
+      id="page-07"
+      class="bg-white h-[842px] w-[595px] flex flex-col items-center justify-between text-slate-600"
+    >
+      <div
+        id="report-header"
+        class="relative flex justify-between items-center w-[490px] gap-4"
+      >
+        <div
+          class="bg-white h-[100px] flex items-end p-2 rounded-b-lg shadow-xl"
+        >
+          <img
+            class="scale-75"
+            src="./assets/img/logos/saphire-icon_saphire-icon 1.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col gap-2 text-right justify-evenly">
+          <h2 class="text-sm font-semibold text-slate-400">التقرير الطبي</h2>
+          <h2 class="text-xl font-bold underline decoration-SaphireOrange">
+            نتائجنا
+          </h2>
+        </div>
+      </div>
+
+      <div
+        class="w-[490px] text-center h-full flex flex-col items-center justify-around"
+      >
+        <!-- B&A -->
+        <div class="grid w-full grid-cols-3 gap-1">
+          <a
+            href=""
+            class="w-40 h-40 border bg-[url('../img/bna/bna-1.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-40 h-40 border bg-[url('../img/bna/bna-2.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-40 h-40 border bg-[url('../img/bna/bna-3.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-40 h-40 border bg-[url('../img/bna/bna-4.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-40 h-40 border bg-[url('../img/bna/bna-5.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-40 h-40 border bg-[url('../img/bna/bna-6.png')] bg-cover rounded-lg bg-center"
+          ></a>
+        </div>
+        <!-- videos -->
+        <div class="grid w-full grid-cols-2 gap-1">
+          <a
+            href=""
+            class="w-60 h-36 border bg-[url('../img/bna/bna-6.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-60 h-36 border bg-[url('../img/bna/bna-6.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-60 h-36 border bg-[url('../img/bna/bna-6.png')] bg-cover rounded-lg bg-center"
+          ></a>
+          <a
+            href=""
+            class="w-60 h-36 border bg-[url('../img/bna/bna-6.png')] bg-cover rounded-lg bg-center"
+          ></a>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-3 text-xs text-white bg-SaphireBlue w-[490px] p-4 h-[40px] rounded-t-lg"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- page 08 -->
+    <div
+      dir="rtl"
+      id="page-08"
+      class="bg-[url('../img/page-2.png')] bg-cover h-[842px] w-[595px] flex flex-col items-center justify-between"
+    >
+      <div id="report-header" class="relative flex justify-center w-full gap-4">
+        <div class="p-2 pt-12 bg-white rounded-b">
+          <img
+            class="w-12"
+            src="./assets/img/logos/saphire-full-logo-color.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="w-[490px] flex flex-col items-center justify-end h-full">
+        <div
+          class="flex flex-col items-center justify-center w-2/3 p-12 pt-0 text-center text-white h-fit from-orange-600 to-yellow-300 bg-gradient-to-tr rounded-2xl"
+        >
+          <img
+            class="scale-125 translate-x-6 -translate-y-12"
+            src="./assets/img/cta.png"
+            alt=""
+          />
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h2 class="text-4xl">استعد إبتسامتك الآن</h2>
+            <p class="text-lg">
+              مع سفير دنت
+              <span class="underline text-bold text-slate-800"
+                >المركز الأول</span
+              >
+              في طب الأسنان
+            </p>
+            <img
+              class="p-2 rounded-lg w-36 bg-white/15"
+              src="./assets/img/mn-qr.svg"
+              alt=""
+            />
+            <div class="flex items-center justify-center gap-4">
+              <a href="">
+                <img src="./assets/img/icons/whatsapp.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assets/img/icons/instagram.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assets/img/icons/youtube.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assets/img/icons/facebook.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        dir="ltr"
+        class="grid grid-cols-3 text-xs text-white w-[490px] my-8 h-[40px]"
+      >
+        <h4 class="text-left">دبي - الإمارات</h4>
+        <h4 class="text-center">www.saphiredent.com</h4>
+        <h4 class="text-right">اسطنبول - تركيا</h4>
+      </div>
+    </div>
+
+    <!-- <table class="table">
+          <tr>
+            <td>
+              <h3>
+                <span class="title">Name:</span>
+                <span t-field="doc.crm_name"></span>
+              </h3>
+              <h3>
+                <span class="title">Diagnosis Age:</span>
+                <span t-field="doc.crm_lead_id.diagnosis_age"></span>
+              </h3>
+              <h3>
+                <span class="title">Medical Situation:</span>
+                <span t-field="doc.crm_lead_id.medial_situation"></span>
+              </h3>
+            </td>
+            <td>
+              <h3>
+                <span class="title">QT ID:</span
+                ><span t-field="doc.qt_id"></span>
+              </h3>
+              <h3>
+                <span class="title">Creator ID:</span>
+                <span t-field="doc.create_uid"></span>
+              </h3>
+              <h3>
+                <span class="title">On:</span>
+                <span
+                  t-field="doc.create_date"
+                  t-options="{'widget': 'date', 'date_format': '%Y-%m-%d'}"
+                ></span>
+              </h3>
+            </td>
+          </tr>
+        </table> -->
+  </body>
+</html>
